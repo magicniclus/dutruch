@@ -1,8 +1,5 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import './globals.css'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Château Dutruch Grand Poujeaux – Excellence du Médoc Vinicole',
@@ -20,7 +17,7 @@ export default function RootLayout({
         <meta charSet="utf-8" />
         <link rel="icon" href="logo/logotext.jpg" sizes="any" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body >{children}</body>
     </html>
   )
 }
